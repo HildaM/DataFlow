@@ -2,6 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <packaging>pom</packaging>
 
     <modules>
         <module>dataflow-web</module>
@@ -13,7 +14,6 @@
         <module>dataflow-cron</module>
         <module>dataflow-stream</module>
     </modules>
-
 
 
     <parent>
@@ -29,8 +29,6 @@
     <name>DataFlow</name>
     <description>DataFlow</description>
 
-    <packaging>pom</packaging>
-
 
     <properties>
         <java.version>11</java.version>
@@ -44,7 +42,7 @@
         <weixin-java>4.1.0</weixin-java>
     </properties>
 
-
+<dependencyManagement>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -208,8 +206,8 @@
             <version>1.7.36</version>
         </dependency>
 
-
     </dependencies>
+</dependencyManagement>
 
     <build>
         <plugins>
