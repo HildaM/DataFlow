@@ -13,13 +13,19 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>dataflow-service-api</name>
     <description>dataflow-service-api</description>
+
+
     <properties>
         <java.version>11</java.version>
     </properties>
 
 
     <dependencies>
-
+        <dependency>
+            <groupId>com.quan.dataflow</groupId>
+            <artifactId>dataflow-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
 

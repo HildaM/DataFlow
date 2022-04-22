@@ -19,7 +19,22 @@
 
 
     <dependencies>
+        <dependency>
+            <groupId>com.quan.dataflow</groupId>
+            <artifactId>dataflow-web</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
 
+        <dependency>
+            <groupId>com.quan.dataflow</groupId>
+            <artifactId>dataflow-service-api</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.monitor4all</groupId>
+            <artifactId>log-record-starter</artifactId>
+            <version>1.0.4.1</version>
+        </dependency>
     </dependencies>
 
 
