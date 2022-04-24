@@ -18,7 +18,7 @@ import lombok.experimental.Accessors;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-@Accessors(chain = true)
+@Accessors(chain = true)   // 链式编程！！！
 public class ProcessContext<T extends ProcessModel> {
 
     /**

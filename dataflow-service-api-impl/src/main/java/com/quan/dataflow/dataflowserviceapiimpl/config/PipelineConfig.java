@@ -1,11 +1,19 @@
 package com.quan.dataflow.dataflowserviceapiimpl.config;
 
+import com.quan.dataflow.dataflowserviceapi.enums.BusinessCode;
+import com.quan.dataflow.dataflowserviceapiimpl.action.AfterParamCheckAction;
+import com.quan.dataflow.dataflowserviceapiimpl.action.AssembleAction;
+import com.quan.dataflow.dataflowserviceapiimpl.action.PreParamCheckAction;
+import com.quan.dataflow.dataflowserviceapiimpl.action.SendMQAction;
 import com.quan.dataflow.dataflowsupport.pipeline.BusinessProcess;
+import com.quan.dataflow.dataflowsupport.pipeline.ProcessController;
 import com.quan.dataflow.dataflowsupport.pipeline.ProcessTemplate;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @ClassName: PipelineConfig
@@ -30,8 +38,49 @@ public class PipelineConfig {
         ProcessTemplate processTemplate = new ProcessTemplate();
         ArrayList<BusinessProcess> processList = new ArrayList<>();
 
-        // TODO 配置
+        processList.add(preParamCheckAction());
+        processList.add(assembleAction());
+        processList.add(afterParamCheckAction());
+        processList.add(sendMqAction());
 
+        processTemplate.setProcessList(processList);
         return processTemplate;
     }
+
+
+    /**
+     * @Author Hilda
+     * @Description     装配ProcessController
+     * @Date 20:24 2022/4/24
+     * @Param []
+     * @returnValue com.quan.dataflow.dataflowsupport.pipeline.BusinessProcess
+     **/
+    @Bean
+    public ProcessController processController() {
+        ProcessController processController = new ProcessController();
+        Map<String, ProcessTemplate> templateConfig = new HashMap<>(4);
+        templateConfig.put(BusinessCode.COMMON_SEND.getCode(), commonSendTemplate());
+        processController.setTemplateConfig(templateConfig);
+        return processController;
+    }
+
+
+
+    private BusinessProcess sendMqAction() {
+        return new SendMQAction();
+    }
+
+    private BusinessProcess afterParamCheckAction() {
+        return new AfterParamCheckAction();
+    }
+
+    private BusinessProcess assembleAction() {
+        return new AssembleAction();
+    }
+
+    private BusinessProcess preParamCheckAction() {
+        return new PreParamCheckAction();
+    }
+
+
 }
