@@ -34,6 +34,7 @@ public class SendMQAction implements BusinessProcess<SendTaskModel> {
     public void process(ProcessContext<SendTaskModel> context) {
         // 1. 获取消息
         SendTaskModel sendTaskModel = context.getProcessModel();
+        // 转换为json格式
         String message = JSON.toJSONString(sendTaskModel.getTaskInfo(), SerializerFeature.WriteClassName);
 
         // 2. 发送消息

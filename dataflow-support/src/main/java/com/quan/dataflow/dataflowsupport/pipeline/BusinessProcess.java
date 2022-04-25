@@ -1,6 +1,7 @@
 package com.quan.dataflow.dataflowsupport.pipeline;/**
 * @ClassName: BusinessProcess
 * @Description: 业务执行器
+ *              责任链模式接口
 * @author: Hilda   Hilda_quan@163.com
 * @date: 2022/4/22 16:32
 */

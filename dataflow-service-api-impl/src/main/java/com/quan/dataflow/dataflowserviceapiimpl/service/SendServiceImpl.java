@@ -27,6 +27,8 @@ public class SendServiceImpl implements SendService {
     @Autowired
     private ProcessController processController;
 
+
+    // 单点发送
     @Override
     @OperationLog(bizType = "SendService#send", bizId = "#sendRequest.messageTemplateId", msg = "#sendRequest")
     public SendResponse send(SendRequest sendRequest) {
@@ -51,8 +53,12 @@ public class SendServiceImpl implements SendService {
         return new SendResponse(process.getResponse().getStatus(), process.getResponse().getMsg());
     }
 
+
+    // 群发信息
     @Override
     public SendResponse batchSend(BatchSendRequest batchSendRequest) {
+
+
         return null;
     }
 }

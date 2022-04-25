@@ -36,6 +36,7 @@ public class PreParamCheckAction implements BusinessProcess<SendTaskModel> {
         }
 
         // 3. 过滤掉不符合的参数
+        // !StrUtil.isBlank(messageParam.getReceiver())：选择不为空的参数！
         List<MessageParam> resultMessageParamList = messageParamList.stream()
                 .filter(messageParam -> !StrUtil.isBlank(messageParam.getReceiver()))
                 .collect(Collectors.toList());

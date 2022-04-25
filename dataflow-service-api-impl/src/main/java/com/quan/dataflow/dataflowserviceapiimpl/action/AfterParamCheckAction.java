@@ -38,8 +38,7 @@ public class AfterParamCheckAction implements BusinessProcess<SendTaskModel> {
         // 1. 过滤掉不合法的手机号
         filterIllegalPhoneNum(taskInfo);
 
-        // 2.
-
+        // 2. 异常处理
         if (CollUtil.isEmpty(taskInfo)) {
             context.setNeedBreak(true).setResponse(BasicResultVO.fail(RespStatusEnum.CLIENT_BAD_PARAMETERS));
         }
