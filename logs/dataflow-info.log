@@ -1,18 +1,72 @@
-2022-04-21 15:59:55.882 [main] INFO  c.quan.dataflow.dataflowweb.DataflowWebApplication - test logger
-2022-04-21 16:04:58.559 [main] INFO  c.quan.dataflow.dataflowweb.DataflowWebApplication - test logger
-2022-04-21 16:05:54.533 [main] INFO  c.quan.dataflow.dataflowweb.DataflowWebApplication - test info
-2022-04-21 16:18:02.508 [main] INFO  c.quan.dataflow.dataflowweb.DataflowWebApplication - Starting DataflowWebApplication using Java 11 on LAPTOP-S9D4HSHI with PID 24960 (D:\Program Pratices\DataFlow\dataflow-web\target\classes started by Quan in D:\Program Pratices\DataFlow)
-2022-04-21 16:18:02.529 [main] INFO  c.quan.dataflow.dataflowweb.DataflowWebApplication - No active profile set, falling back to 1 default profile: "default"
-2022-04-21 16:18:05.356 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2022-04-21 16:18:05.382 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2022-04-21 16:18:05.383 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2022-04-21 16:18:05.384 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-04-21 16:18:05.733 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2022-04-21 16:18:05.734 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3109 ms
-2022-04-21 16:18:07.240 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
-2022-04-21 16:18:07.304 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2022-04-21 16:18:07.346 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2022-04-21 16:18:07.418 [main] INFO  c.quan.dataflow.dataflowweb.DataflowWebApplication - Started DataflowWebApplication in 5.749 seconds (JVM running for 8.623)
-2022-04-21 16:18:10.093 [RMI TCP Connection(2)-192.168.4.1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-04-21 16:18:10.095 [RMI TCP Connection(2)-192.168.4.1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2022-04-21 16:18:10.098 [RMI TCP Connection(2)-192.168.4.1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2022-04-25 20:10:19.208 [main] INFO  c.quan.dataflow.dataflowweb.DataflowWebApplication - Starting DataflowWebApplication using Java 11 on LAPTOP-S9D4HSHI with PID 6448 (D:\Program Pratices\DataFlow\dataflow-web\target\classes started by Quan in D:\Program Pratices\DataFlow)
+2022-04-25 20:10:19.223 [main] INFO  c.quan.dataflow.dataflowweb.DataflowWebApplication - No active profile set, falling back to 1 default profile: "default"
+2022-04-25 20:10:24.120 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-04-25 20:10:24.156 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-25 20:10:24.156 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-04-25 20:10:24.156 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-25 20:10:24.505 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-04-25 20:10:24.505 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5146 ms
+2022-04-25 20:10:25.186 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2022-04-25 20:10:25.230 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-25 20:20:40.577 [main] INFO  c.quan.dataflow.dataflowweb.DataflowWebApplication - Starting DataflowWebApplication using Java 11 on LAPTOP-S9D4HSHI with PID 10836 (D:\Program Pratices\DataFlow\dataflow-web\target\classes started by Quan in D:\Program Pratices\DataFlow)
+2022-04-25 20:20:40.585 [main] INFO  c.quan.dataflow.dataflowweb.DataflowWebApplication - No active profile set, falling back to 1 default profile: "default"
+2022-04-25 20:20:45.109 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-04-25 20:20:45.141 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-25 20:20:45.141 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-04-25 20:20:45.141 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-25 20:20:45.482 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-04-25 20:20:45.483 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4774 ms
+2022-04-25 20:20:46.086 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2022-04-25 20:20:46.132 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-25 20:40:26.039 [main] INFO  c.quan.dataflow.dataflowweb.DataflowWebApplication - Starting DataflowWebApplication using Java 11 on LAPTOP-S9D4HSHI with PID 17360 (D:\Program Pratices\DataFlow\dataflow-web\target\classes started by Quan in D:\Program Pratices\DataFlow)
+2022-04-25 20:40:26.047 [main] INFO  c.quan.dataflow.dataflowweb.DataflowWebApplication - No active profile set, falling back to 1 default profile: "default"
+2022-04-25 20:40:30.300 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-04-25 20:40:30.332 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-25 20:40:30.332 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-04-25 20:40:30.332 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-25 20:40:30.669 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-04-25 20:40:30.669 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4478 ms
+2022-04-25 20:40:31.257 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2022-04-25 20:40:31.297 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-25 20:42:49.538 [main] INFO  c.quan.dataflow.dataflowweb.DataflowWebApplication - Starting DataflowWebApplication using Java 11 on LAPTOP-S9D4HSHI with PID 15432 (D:\Program Pratices\DataFlow\dataflow-web\target\classes started by Quan in D:\Program Pratices\DataFlow)
+2022-04-25 20:42:49.542 [main] INFO  c.quan.dataflow.dataflowweb.DataflowWebApplication - No active profile set, falling back to 1 default profile: "default"
+2022-04-25 20:42:53.705 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-04-25 20:42:53.733 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-25 20:42:53.737 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-04-25 20:42:53.737 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-25 20:42:54.049 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-04-25 20:42:54.049 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4389 ms
+2022-04-25 20:42:54.657 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2022-04-25 20:42:54.701 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-25 20:44:07.777 [main] INFO  com.quan.dataflow.DataflowWebApplication - Starting DataflowWebApplication using Java 11 on LAPTOP-S9D4HSHI with PID 18392 (D:\Program Pratices\DataFlow\dataflow-web\target\classes started by Quan in D:\Program Pratices\DataFlow)
+2022-04-25 20:44:07.785 [main] INFO  com.quan.dataflow.DataflowWebApplication - No active profile set, falling back to 1 default profile: "default"
+2022-04-25 20:44:12.524 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-04-25 20:44:12.552 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-25 20:44:12.552 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-04-25 20:44:12.556 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-25 20:44:12.914 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-04-25 20:44:12.914 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5005 ms
+2022-04-25 20:44:13.883 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2022-04-25 20:44:13.927 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-25 20:44:38.437 [main] INFO  com.quan.dataflow.DataflowWebApplication - Starting DataflowWebApplication using Java 11 on LAPTOP-S9D4HSHI with PID 18200 (D:\Program Pratices\DataFlow\dataflow-web\target\classes started by Quan in D:\Program Pratices\DataFlow)
+2022-04-25 20:44:38.446 [main] INFO  com.quan.dataflow.DataflowWebApplication - No active profile set, falling back to 1 default profile: "default"
+2022-04-25 20:44:43.570 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-04-25 20:44:43.598 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-25 20:44:43.598 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-04-25 20:44:43.598 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-25 20:44:43.920 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-04-25 20:44:43.921 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5367 ms
+2022-04-25 20:44:44.804 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2022-04-25 20:44:44.844 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.

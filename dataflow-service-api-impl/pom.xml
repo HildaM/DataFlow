@@ -21,9 +21,10 @@
     <dependencies>
         <dependency>
             <groupId>com.quan.dataflow</groupId>
-            <artifactId>dataflow-web</artifactId>
+            <artifactId>dataflow-support</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
+
 
         <dependency>
             <groupId>com.quan.dataflow</groupId>
@@ -34,6 +35,12 @@
             <groupId>cn.monitor4all</groupId>
             <artifactId>log-record-starter</artifactId>
             <version>1.0.4.1</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-core</artifactId>
+            <version>5.5.1</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 

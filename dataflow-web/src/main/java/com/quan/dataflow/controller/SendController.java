@@ -1,4 +1,4 @@
-package com.quan.dataflow.dataflowweb.controller;
+package com.quan.dataflow.controller;
 
 import com.quan.dataflow.dataflowserviceapi.domain.SendRequest;
 import com.quan.dataflow.dataflowserviceapi.domain.SendResponse;

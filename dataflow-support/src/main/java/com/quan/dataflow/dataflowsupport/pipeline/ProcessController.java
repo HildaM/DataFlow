@@ -7,6 +7,8 @@ import com.quan.dataflow.dataflowcommon.vo.BasicResultVO;
 import com.quan.dataflow.dataflowsupport.exception.ProcessException;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Controller;
 
 import java.util.List;
 import java.util.Map;
