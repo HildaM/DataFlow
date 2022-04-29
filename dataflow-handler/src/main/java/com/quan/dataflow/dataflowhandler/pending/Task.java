@@ -1,5 +1,6 @@
 package com.quan.dataflow.dataflowhandler.pending;
 
+import cn.hutool.core.collection.CollUtil;
 import com.quan.dataflow.dataflowcommon.domain.TaskInfo;
 import com.quan.dataflow.dataflowhandler.deduplication.DeduplicationRuleService;
 import com.quan.dataflow.dataflowhandler.discard.DiscardMessageService;
@@ -52,6 +53,22 @@ public class Task implements Runnable {
     // 线程服务
     @Override
     public void run() {
+        // 1. 丢弃信息
+        if (discardMessageService.isDiscard(taskInfo)) {
+            return;
+        }
 
+        // 2. 屏蔽信息
+        shieldService.shield(taskInfo);
+
+        // 3. 平台通用去重
+        if (CollUtil.isNotEmpty(taskInfo.getReceiver())) {
+            deduplicationRuleService.duplication(taskInfo);
+        }
+
+        // 4. 真正发送信息
+        if (CollUtil.isNotEmpty(taskInfo.getReceiver())) {
+            handlerHolder.route(taskInfo.getSendChannel()).doHandler(taskInfo);
+        }
     }
 }

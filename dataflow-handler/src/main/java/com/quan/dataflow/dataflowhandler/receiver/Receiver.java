@@ -48,6 +48,11 @@ public class Receiver {
     private LogUtils logUtils;
 
 
+
+    /**
+     * @Header(KafkaHeaders.GROUP_ID) String topicGroupId)：获取consumer的groupId。groupId由ReceiverStart的方法生成！
+     * public static KafkaListenerAnnotationBeanPostProcessor.AnnotationEnhancer groupIdEnhancer()
+     **/
     @KafkaListener(topics = "#{'${austin.business.topic.name}'}")
     public void consumer(ConsumerRecord<?, String> consumerRecord, @Header(KafkaHeaders.GROUP_ID) String topicGroupId) {
         Optional<String> kafkaMessage = Optional.ofNullable(consumerRecord.value());
@@ -77,6 +82,7 @@ public class Receiver {
                     // 通过ApplicationContext的getBean方法来获取Spring容器中已初始化的bean
                     Task task = context.getBean(Task.class).setTaskInfo(taskInfo);
 
+                    // route：路由到指定group的线程池，然后指向线程方法！！！
                     taskPendingHolder.route(topicGroupId).execute(task);
                 }
             }

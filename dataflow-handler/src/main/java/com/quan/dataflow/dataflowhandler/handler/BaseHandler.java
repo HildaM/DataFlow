@@ -22,9 +22,9 @@ public abstract class BaseHandler implements Handler {
      */
     protected Integer channelCode;
 
-
     @Autowired
     private HandlerHolder handlerHolder;
+
     @Autowired
     private LogUtils logUtils;
 
