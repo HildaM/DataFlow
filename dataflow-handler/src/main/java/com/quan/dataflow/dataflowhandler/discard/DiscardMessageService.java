@@ -24,7 +24,7 @@ public class DiscardMessageService {
 
     private static final String DISCARD_MESSAGE_KEY = "discard";
 
-    @ApolloConfig("boss.dataflow")
+    @ApolloConfig("boss.austin")
     private Config config;
 
     @Autowired

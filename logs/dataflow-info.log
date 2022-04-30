@@ -1,72 +1,48 @@
-2022-04-25 20:10:19.208 [main] INFO  c.quan.dataflow.dataflowweb.DataflowWebApplication - Starting DataflowWebApplication using Java 11 on LAPTOP-S9D4HSHI with PID 6448 (D:\Program Pratices\DataFlow\dataflow-web\target\classes started by Quan in D:\Program Pratices\DataFlow)
-2022-04-25 20:10:19.223 [main] INFO  c.quan.dataflow.dataflowweb.DataflowWebApplication - No active profile set, falling back to 1 default profile: "default"
-2022-04-25 20:10:24.120 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2022-04-25 20:10:24.156 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2022-04-25 20:10:24.156 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2022-04-25 20:10:24.156 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-04-25 20:10:24.505 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2022-04-25 20:10:24.505 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5146 ms
-2022-04-25 20:10:25.186 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
-2022-04-25 20:10:25.230 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+2022-04-30 11:31:27.797 [main] INFO  c.c.f.f.i.provider.DefaultApplicationProvider - App ID is set to myaustin by app.id property from System Property
+2022-04-30 11:31:27.829 [main] INFO  c.c.f.f.internals.provider.DefaultServerProvider - Environment is set to null. Because it is not available in either (1) JVM system property 'env', (2) OS env variable 'ENV' nor (3) property 'env' from the properties InputStream.
+2022-04-30 11:31:44.197 [main] INFO  com.quan.dataflow.DataflowWebApplication - Starting DataflowWebApplication using Java 11 on LAPTOP-S9D4HSHI with PID 5692 (D:\Program Pratices\DataFlow\dataflow-web\target\classes started by Quan in D:\Program Pratices\DataFlow)
+2022-04-30 11:31:44.199 [main] INFO  com.quan.dataflow.DataflowWebApplication - No active profile set, falling back to 1 default profile: "default"
+2022-04-30 11:31:48.014 [main] INFO  o.s.c.annotation.ConfigurationClassPostProcessor - Cannot enhance @Configuration bean definition 'com.ctrip.framework.apollo.spring.boot.ApolloAutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2022-04-30 11:31:48.430 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'groupIdEnhancer' of type [com.quan.dataflow.dataflowhandler.receiver.ReceiverStart$$Lambda$453/0x00000008004c3c40] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-30 11:31:49.784 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-04-30 11:31:49.819 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-30 11:31:49.821 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-04-30 11:31:49.822 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-30 11:31:50.307 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-04-30 11:31:50.308 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5927 ms
+2022-04-30 11:31:51.192 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2022-04-30 11:31:51.234 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2022-04-25 20:20:40.577 [main] INFO  c.quan.dataflow.dataflowweb.DataflowWebApplication - Starting DataflowWebApplication using Java 11 on LAPTOP-S9D4HSHI with PID 10836 (D:\Program Pratices\DataFlow\dataflow-web\target\classes started by Quan in D:\Program Pratices\DataFlow)
-2022-04-25 20:20:40.585 [main] INFO  c.quan.dataflow.dataflowweb.DataflowWebApplication - No active profile set, falling back to 1 default profile: "default"
-2022-04-25 20:20:45.109 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2022-04-25 20:20:45.141 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2022-04-25 20:20:45.141 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2022-04-25 20:20:45.141 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-04-25 20:20:45.482 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2022-04-25 20:20:45.483 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4774 ms
-2022-04-25 20:20:46.086 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
-2022-04-25 20:20:46.132 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+2022-04-30 11:46:07.350 [main] INFO  c.c.f.f.i.provider.DefaultApplicationProvider - App ID is set to myaustin by app.id property from System Property
+2022-04-30 11:46:07.365 [main] INFO  c.c.f.f.internals.provider.DefaultServerProvider - Environment is set to null. Because it is not available in either (1) JVM system property 'env', (2) OS env variable 'ENV' nor (3) property 'env' from the properties InputStream.
+2022-04-30 11:46:23.505 [main] INFO  com.quan.dataflow.DataflowWebApplication - Starting DataflowWebApplication using Java 11 on LAPTOP-S9D4HSHI with PID 20700 (D:\Program Pratices\DataFlow\dataflow-web\target\classes started by Quan in D:\Program Pratices\DataFlow)
+2022-04-30 11:46:23.507 [main] INFO  com.quan.dataflow.DataflowWebApplication - No active profile set, falling back to 1 default profile: "default"
+2022-04-30 11:46:26.861 [main] INFO  o.s.c.annotation.ConfigurationClassPostProcessor - Cannot enhance @Configuration bean definition 'com.ctrip.framework.apollo.spring.boot.ApolloAutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2022-04-30 11:46:27.271 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'groupIdEnhancer' of type [com.quan.dataflow.dataflowhandler.receiver.ReceiverStart$$Lambda$453/0x00000008004c3c40] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-30 11:46:28.617 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-04-30 11:46:28.649 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-30 11:46:28.651 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-04-30 11:46:28.651 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-30 11:46:28.987 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-04-30 11:46:28.987 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5354 ms
+2022-04-30 11:46:29.775 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2022-04-30 11:46:29.818 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2022-04-25 20:40:26.039 [main] INFO  c.quan.dataflow.dataflowweb.DataflowWebApplication - Starting DataflowWebApplication using Java 11 on LAPTOP-S9D4HSHI with PID 17360 (D:\Program Pratices\DataFlow\dataflow-web\target\classes started by Quan in D:\Program Pratices\DataFlow)
-2022-04-25 20:40:26.047 [main] INFO  c.quan.dataflow.dataflowweb.DataflowWebApplication - No active profile set, falling back to 1 default profile: "default"
-2022-04-25 20:40:30.300 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2022-04-25 20:40:30.332 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2022-04-25 20:40:30.332 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2022-04-25 20:40:30.332 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-04-25 20:40:30.669 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2022-04-25 20:40:30.669 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4478 ms
-2022-04-25 20:40:31.257 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
-2022-04-25 20:40:31.297 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2022-04-25 20:42:49.538 [main] INFO  c.quan.dataflow.dataflowweb.DataflowWebApplication - Starting DataflowWebApplication using Java 11 on LAPTOP-S9D4HSHI with PID 15432 (D:\Program Pratices\DataFlow\dataflow-web\target\classes started by Quan in D:\Program Pratices\DataFlow)
-2022-04-25 20:42:49.542 [main] INFO  c.quan.dataflow.dataflowweb.DataflowWebApplication - No active profile set, falling back to 1 default profile: "default"
-2022-04-25 20:42:53.705 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2022-04-25 20:42:53.733 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2022-04-25 20:42:53.737 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2022-04-25 20:42:53.737 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-04-25 20:42:54.049 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2022-04-25 20:42:54.049 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4389 ms
-2022-04-25 20:42:54.657 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
-2022-04-25 20:42:54.701 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2022-04-25 20:44:07.777 [main] INFO  com.quan.dataflow.DataflowWebApplication - Starting DataflowWebApplication using Java 11 on LAPTOP-S9D4HSHI with PID 18392 (D:\Program Pratices\DataFlow\dataflow-web\target\classes started by Quan in D:\Program Pratices\DataFlow)
-2022-04-25 20:44:07.785 [main] INFO  com.quan.dataflow.DataflowWebApplication - No active profile set, falling back to 1 default profile: "default"
-2022-04-25 20:44:12.524 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2022-04-25 20:44:12.552 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2022-04-25 20:44:12.552 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2022-04-25 20:44:12.556 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-04-25 20:44:12.914 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2022-04-25 20:44:12.914 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5005 ms
-2022-04-25 20:44:13.883 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
-2022-04-25 20:44:13.927 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2022-04-25 20:44:38.437 [main] INFO  com.quan.dataflow.DataflowWebApplication - Starting DataflowWebApplication using Java 11 on LAPTOP-S9D4HSHI with PID 18200 (D:\Program Pratices\DataFlow\dataflow-web\target\classes started by Quan in D:\Program Pratices\DataFlow)
-2022-04-25 20:44:38.446 [main] INFO  com.quan.dataflow.DataflowWebApplication - No active profile set, falling back to 1 default profile: "default"
-2022-04-25 20:44:43.570 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2022-04-25 20:44:43.598 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2022-04-25 20:44:43.598 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2022-04-25 20:44:43.598 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-04-25 20:44:43.920 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2022-04-25 20:44:43.921 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5367 ms
-2022-04-25 20:44:44.804 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
-2022-04-25 20:44:44.844 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+2022-04-30 12:00:48.530 [main] INFO  c.c.f.f.i.provider.DefaultApplicationProvider - App ID is set to myaustin by app.id property from System Property
+2022-04-30 12:00:48.548 [main] INFO  c.c.f.f.internals.provider.DefaultServerProvider - Environment is set to null. Because it is not available in either (1) JVM system property 'env', (2) OS env variable 'ENV' nor (3) property 'env' from the properties InputStream.
+2022-04-30 12:01:04.690 [main] INFO  com.quan.dataflow.DataflowWebApplication - Starting DataflowWebApplication using Java 11 on LAPTOP-S9D4HSHI with PID 16488 (D:\Program Pratices\DataFlow\dataflow-web\target\classes started by Quan in D:\Program Pratices\DataFlow)
+2022-04-30 12:01:04.692 [main] INFO  com.quan.dataflow.DataflowWebApplication - No active profile set, falling back to 1 default profile: "default"
+2022-04-30 12:01:08.169 [main] INFO  o.s.c.annotation.ConfigurationClassPostProcessor - Cannot enhance @Configuration bean definition 'com.ctrip.framework.apollo.spring.boot.ApolloAutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2022-04-30 12:01:08.569 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'groupIdEnhancer' of type [com.quan.dataflow.dataflowhandler.receiver.ReceiverStart$$Lambda$453/0x00000008004c3c40] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-30 12:01:09.844 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-04-30 12:01:09.874 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-30 12:01:09.876 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-04-30 12:01:09.876 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-30 12:01:10.238 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-04-30 12:01:10.238 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5409 ms
+2022-04-30 12:01:10.997 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2022-04-30 12:01:11.042 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.

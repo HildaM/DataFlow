@@ -23,7 +23,7 @@ public class DeduplicationRuleService {
 
     public static final String DEDUPLICATION_RULE_KEY = "deduplication";
 
-    @ApolloConfig("boss.dataflow")
+    @ApolloConfig("boss.austin")
     private Config config;
 
     @Autowired

@@ -77,14 +77,20 @@ public class RedisUtils {
 
     /**
      * pipeline 设置 key-value 并设置过期时间
+     *
+     * redisTemplate-executePipelined使用
+     *      使用Pipeline可以批量执行redis命令，防止多个命令建立多个连接
+     *      以下代码是通用的代码！！！
      */
     public void pipelineSetEx(Map<String, String> keyValues, Long seconds) {
         try {
             redisTemplate.executePipelined((RedisCallback<String>) connection -> {
+                // setex：设置key-value。批量处理！！！
                 for (Map.Entry<String, String> entry : keyValues.entrySet()) {
                     connection.setEx(entry.getKey().getBytes(), seconds,
                             entry.getValue().getBytes());
                 }
+                // 如无其他需求，这里返回null即可
                 return null;
             });
         } catch (Exception e) {

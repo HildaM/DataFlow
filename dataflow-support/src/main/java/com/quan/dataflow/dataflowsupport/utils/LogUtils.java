@@ -25,7 +25,7 @@ public class LogUtils extends CustomLogListener {
     @Autowired
     private KafkaUtils kafkaUtils;
 
-    @Value("${dataflow.business.log.topic.name}")
+    @Value("${austin.business.log.topic.name}")
     private String topicName;
 
 
