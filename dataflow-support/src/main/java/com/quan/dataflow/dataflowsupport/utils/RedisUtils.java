@@ -24,7 +24,7 @@ import java.util.Map;
 public class RedisUtils {
 
     @Autowired
-    private StringRedisTemplate redisTemplate;
+    private StringRedisTemplate stringRedisTemplate;
 
     /**
      * mGet将结果封装为Map
@@ -34,7 +34,7 @@ public class RedisUtils {
     public Map<String, String> mGet(List<String> keys) {
         HashMap<String, String> result = new HashMap<>(keys.size());
         try {
-            List<String> value = redisTemplate.opsForValue().multiGet(keys);
+            List<String> value = stringRedisTemplate.opsForValue().multiGet(keys);
             if (CollUtil.isNotEmpty(value)) {
                 for (int i = 0; i < keys.size(); i++) {
                     result.put(keys.get(i), value.get(i));
@@ -53,7 +53,7 @@ public class RedisUtils {
      */
     public Map<Object, Object> hGetAll(String key) {
         try {
-            Map<Object, Object> entries = redisTemplate.opsForHash().entries(key);
+            Map<Object, Object> entries = stringRedisTemplate.opsForHash().entries(key);
             return entries;
         } catch (Exception e) {
             log.error("RedisUtils#hGetAll fail! e:{}", Throwables.getStackTraceAsString(e));
@@ -68,7 +68,7 @@ public class RedisUtils {
      */
     public List<String> lRange(String key, long start, long end) {
         try {
-            return redisTemplate.opsForList().range(key, start, end);
+            return stringRedisTemplate.opsForList().range(key, start, end);
         } catch (Exception e) {
             log.error("RedisUtils#lRange fail! e:{}", Throwables.getStackTraceAsString(e));
         }
@@ -77,20 +77,14 @@ public class RedisUtils {
 
     /**
      * pipeline 设置 key-value 并设置过期时间
-     *
-     * redisTemplate-executePipelined使用
-     *      使用Pipeline可以批量执行redis命令，防止多个命令建立多个连接
-     *      以下代码是通用的代码！！！
      */
     public void pipelineSetEx(Map<String, String> keyValues, Long seconds) {
         try {
-            redisTemplate.executePipelined((RedisCallback<String>) connection -> {
-                // setex：设置key-value。批量处理！！！
+            stringRedisTemplate.executePipelined((RedisCallback<String>) connection -> {
                 for (Map.Entry<String, String> entry : keyValues.entrySet()) {
                     connection.setEx(entry.getKey().getBytes(), seconds,
                             entry.getValue().getBytes());
                 }
-                // 如无其他需求，这里返回null即可
                 return null;
             });
         } catch (Exception e) {
@@ -105,7 +99,7 @@ public class RedisUtils {
      */
     public void lPush(String key, String value, Long seconds) {
         try {
-            redisTemplate.executePipelined((RedisCallback<String>) connection -> {
+            stringRedisTemplate.executePipelined((RedisCallback<String>) connection -> {
                 connection.lPush(key.getBytes(), value.getBytes());
                 connection.expire(key.getBytes(), seconds);
                 return null;
@@ -121,7 +115,7 @@ public class RedisUtils {
      */
     public Long lLen(String key) {
         try {
-            return redisTemplate.opsForList().size(key);
+            return stringRedisTemplate.opsForList().size(key);
         } catch (Exception e) {
             log.error("RedisUtils#pipelineSetEx fail! e:{}", Throwables.getStackTraceAsString(e));
         }
@@ -133,7 +127,7 @@ public class RedisUtils {
      */
     public String lPop(String key) {
         try {
-            return redisTemplate.opsForList().leftPop(key);
+            return stringRedisTemplate.opsForList().leftPop(key);
         } catch (Exception e) {
             log.error("RedisUtils#pipelineSetEx fail! e:{}", Throwables.getStackTraceAsString(e));
         }
@@ -148,7 +142,7 @@ public class RedisUtils {
      */
     public void pipelineHashIncrByEx(Map<String, String> keyValues, Long seconds, Long delta) {
         try {
-            redisTemplate.executePipelined((RedisCallback<String>) connection -> {
+            stringRedisTemplate.executePipelined((RedisCallback<String>) connection -> {
                 for (Map.Entry<String, String> entry : keyValues.entrySet()) {
                     connection.hIncrBy(entry.getKey().getBytes(), entry.getValue().getBytes(), delta);
                     connection.expire(entry.getKey().getBytes(), seconds);

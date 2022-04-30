@@ -32,6 +32,7 @@ public abstract class AbstractDeduplicationService implements DeduplicationServi
 
     @Autowired
     private RedisUtils redisUtils;
+
     @Autowired
     private LogUtils logUtils;
 
